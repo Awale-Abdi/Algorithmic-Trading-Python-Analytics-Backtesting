@@ -42,15 +42,15 @@ This project demonstrates a systematic, data-driven approach to investment strat
 
 - Explore alternative asset classes (bonds, commodities, cryptocurrencies).
 
-- Apply machine learning models for predictive insights.
+- Apply machine learning models for predictive insights and for optimizing the strategy's performance.
 
-### **How to Use
+### **How to Use**
 
-### **1. Clone the Repository**
+#### **1. Clone the Repository**
 ```sh
 git clone https://github.com/Awale-Abdi/Algorithmic_Trading_Healthcare_Portfolio
 ```
-### 2. Have the Datasets present in your working directory
+#### 2. Have the Datasets present in your working directory
 
 The analyses rely on the following three datasets being present in your working directory:
 
@@ -60,7 +60,7 @@ The analyses rely on the following three datasets being present in your working 
   
 You must have all these files present in your working directory for the Python Notebook to run without errors. They are loaded via relative paths, so as long as they are in your working directory, everything should work fine.
 
-### **3. Run the Python Notebook**
+#### **3. Run the Python Notebook**
 Run Python in the Jupyter Notebook format, download the datasets into your working directory then run the following notebook:
 
 - Data-Driven Investment Strategy - Analyzing Financial Data for Portfolio Optimization.ipynb
