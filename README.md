@@ -10,7 +10,7 @@ This project applies Data Science techniques to financial data to design a profi
 - **Exploratory Data Analysis (EDA):** Investigating stock distributions, trends, and initial volatility insights.
 - **Deeper Data Analysis:** Evaluating price behavior, volatility, and sector distributions to identify strong investment candidates.
 - **Backtesting Chosen Strategy:** Implementing a rule-based investment approach and benchmarking it against the S&P 500.
-- **Conclusion:** Wrapping  & evaluation of the chosen strategy's performance and what it says about a data-driven approach to portfolio optimization.
+- **Conclusion:** Summarizes and evaluates the chosen strategy's performance and what it says about a data-driven approach to portfolio optimization.
 
 ### **Tools & Techniques Used**
 
