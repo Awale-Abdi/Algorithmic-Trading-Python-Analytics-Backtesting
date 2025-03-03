@@ -25,13 +25,6 @@ The backtested portfolio outperformed the S&P 500 in 60% of cases while limiting
 Even when underperforming, the portfolio only lagged the S&P by ~20%, but when winning, it exceeded it by ~40%.
 Risk-adjusted metrics like Sharpe and Sortino ratios confirmed the portfolio’s superior risk-return tradeoff.
 
-
-### **The project includes interactive visualizations to display**
-
-- Sector-based stock price distributions and volatility trends
-- Cohort-wise performance breakdowns for various price groups
-- Cumulative returns over time for the healthcare portfolio vs. the S&P 500
-
 ### **Conclusion**
 
 This project demonstrates a systematic, data-driven approach to investment strategy development. By using financial data analysis and backtesting, I validate an investment method that not only beats the market more often than not but does so with controlled risk and strong stability. The methodology and insights can be extended to other sectors or refined further for improved accuracy and this project overall showcases how useful data science can be for portfolio management.
