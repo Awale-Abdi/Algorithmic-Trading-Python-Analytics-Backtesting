@@ -22,14 +22,6 @@ This project applies Data Science techniques to financial data to design a profi
 
 The healthcare sector emerged as a strong investment choice due to its balance of stability and returns. The backtested portfolio outperformed the S&P 500 in ~60% of iterations run while limiting downside risks. Even when underperforming, the portfolio only lagged behind the S&P by ~20% on average, but when winning, it exceeded it by ~40% on average. Risk-adjusted metrics like Sharpe and Sortino ratios confirmed the portfolio’s superior risk-return tradeoff. This balance of higher returns with controlled risk underscores healthcare as a strategic investment sector and highlights the value of applying data science to portfolio design.
 
-### **Future Improvements**
-
-- Implement Monte Carlo simulations to model risk scenarios.
-
-- Explore alternative asset classes (bonds, commodities, cryptocurrencies).
-
-- Apply machine learning models for predictive insights and for optimizing the strategy's performance.
-
 ### **How to Use**
 
 #### **1. Clone the Repository**
