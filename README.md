@@ -2,7 +2,7 @@
 
 ### **Overview**
 
-This project applies Data Science techniques to financial data to design a profitable and robust investment strategy. By analyzing price behavior, volatility, and sector trends within the S&P 500, it identifies key patterns for optimal portfolio selection. The workflow includes data preparation, exploratory analysis, sector-level insights, and the development of a backtested investment strategy. Using Python, pandas, NumPy, and statistical metrics such as CAGR, Sharpe ratio, and Sortino ratio, the project demonstrates how data-driven insights can enhance investment decision-making and portfolio performance.
+This project applies Data Science techniques to financial data to design a profitable and robust investment strategy. By analyzing price behavior, volatility, and sector trends within the S&P 500, it identifies key patterns for optimal portfolio selection and aims to demonstrate how data-driven insights can enhance investment decision-making and portfolio performance.
 
 ### **Structure of Workflow**
 
