@@ -27,7 +27,7 @@ Risk-adjusted metrics like Sharpe and Sortino ratios confirmed the portfolio’s
 
 ### **Conclusion**
 
-This project demonstrates a systematic, data-driven approach to investment strategy development. By using financial data analysis and backtesting, I validate an investment method that not only beats the market more often than not but does so with controlled risk and strong stability. The methodology and insights can be extended to other sectors or refined further for improved accuracy and this project overall showcases how useful data science can be for portfolio management.
+The healthcare portfolio achieved a CAGR of ~13%, surpassing the S&P 500's ~11%, while also demonstrating superior risk-adjusted returns. It outperformed the S&P 500 in ~60% of cases, and when it underperformed, losses were limited to on average ~20% below the index, whereas in winning cases, gains reached on average ~40% above the index. This balance of higher returns with controlled risk underscores healthcare as a strategic investment sector and highlights the value of applying data science to portfolio design.
 
 ### **Future Improvements**
 
@@ -54,7 +54,7 @@ The analyses rely on the following three datasets being present in your working 
 You must have all these files present in your working directory for the Python Notebook to run without errors. They are loaded via relative paths, so as long as they are in your working directory, everything should work fine.
 
 #### **3. Run the Python Notebook**
-Run Python in the Jupyter Notebook format, download the datasets into your working directory then run the following notebook:
+Run the Jupyter Notebook environment, have the prior outlined datasets present in your working directory and execute the following notebook:
 
 - Data-Driven Investment Strategy - Analyzing Financial Data for Portfolio Optimization.ipynb
 
