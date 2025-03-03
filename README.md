@@ -20,14 +20,7 @@ This project applies Data Science techniques to financial data to design a profi
 
 ### **Key Findings**
 
-The healthcare sector emerged as a strong investment choice due to its balance of stability and returns.
-The backtested portfolio outperformed the S&P 500 in 60% of cases while limiting downside risks.
-Even when underperforming, the portfolio only lagged the S&P by ~20%, but when winning, it exceeded it by ~40%.
-Risk-adjusted metrics like Sharpe and Sortino ratios confirmed the portfolio’s superior risk-return tradeoff.
-
-### **Conclusion**
-
-The healthcare portfolio achieved a CAGR of ~13%, surpassing the S&P 500's ~11%, while also demonstrating superior risk-adjusted returns. It outperformed the S&P 500 in ~60% of cases, and when it underperformed, losses were limited to on average ~20% below the index, whereas in winning cases, gains reached on average ~40% above the index. This balance of higher returns with controlled risk underscores healthcare as a strategic investment sector and highlights the value of applying data science to portfolio design.
+The healthcare sector emerged as a strong investment choice due to its balance of stability and returns. The backtested portfolio outperformed the S&P 500 in ~60% of iterations run while limiting downside risks. Even when underperforming, the portfolio only lagged behind the S&P by ~20% on average, but when winning, it exceeded it by ~40% on average. Risk-adjusted metrics like Sharpe and Sortino ratios confirmed the portfolio’s superior risk-return tradeoff. This balance of higher returns with controlled risk underscores healthcare as a strategic investment sector and highlights the value of applying data science to portfolio design.
 
 ### **Future Improvements**
 
