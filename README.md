@@ -1,4 +1,4 @@
-# Data-Driven Investment Strategy: Analyzing Financial Data for Portfolio Optimization
+<h1 align="center">Data-Driven Investment Strategy: Analyzing Financial Data for Portfolio Optimization</h1>
 
 ### **Overview**
 
