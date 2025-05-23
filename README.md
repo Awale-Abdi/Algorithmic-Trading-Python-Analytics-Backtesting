@@ -49,7 +49,5 @@ For questions or collaboration, reach out via:
 
 - Awaleiabdi@outlook.com
 
-- [GitHub](https://github.com/Awale-Abdi)
-
 - [LinkedIn](https://www.linkedin.com/in/awale-abdi/)
 
