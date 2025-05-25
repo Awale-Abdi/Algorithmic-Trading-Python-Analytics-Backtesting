@@ -30,6 +30,7 @@ Key goals:
 
 ## 📊 Tools & Techniques Used
 
+- **Development Environment:** Visual Studio Code (VS Code) – primary IDE used for coding, debugging, and workflow management  
 - **Libraries:** `pandas`, `numpy`, `matplotlib`, `seaborn`, `plotly`  
 - **Financial Metrics:** CAGR, Sharpe Ratio, Sortino Ratio, Max Drawdown, Volatility, Calmar Ratio  
 - **Backtesting Methodology:** Simulated healthcare portfolio selections with 1,000 iterative comparisons against the S&P 500 (2010–2024)  
