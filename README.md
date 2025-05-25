@@ -47,6 +47,7 @@ The healthcare sector emerged as a strong investment choice due to its balance o
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/Awale-Abdi/Algorithmic_Trading_Healthcare_Portfolio
+```
 
 ### 2. Prepare Datasets
 
