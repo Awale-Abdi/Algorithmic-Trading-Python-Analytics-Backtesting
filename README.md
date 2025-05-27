@@ -70,7 +70,7 @@ Launch the notebook environment and execute:
 
 ---
 
-## 📬 Contact Me
+### **Contact Me**
 
 For questions or collaboration, reach out via:
 
