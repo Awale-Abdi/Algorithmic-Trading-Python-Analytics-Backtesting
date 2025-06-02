@@ -1,4 +1,4 @@
-<h1 align="center">Data-Driven Investment Strategy – Analyzing Financial Data for Portfolio Optimization</h1>-
+<h1 align="center">Data-Driven Investment Strategy – Analyzing Financial Data for Portfolio Optimization</h1>
 
 This project applies Data Science techniques to financial data—processing up to ~14.96 million data points from 503 companies & 1.86M stock records using **Python**—to design a profitable and robust investment strategy. By analyzing price behavior, volatility, and sector trends within the S&P 500, it identifies key patterns for optimal portfolio selection and aims to demonstrate how data-driven insights can enhance investment decision-making and portfolio performance.
 
