@@ -1,358 +1,222 @@
-<h1 align="center">Natural Language Processing & Social Media Analytics with Python</h1>
+<h1 align="center">Predictive Analytics & Statistical Modeling | Data-Driven Portfolio Analysis with Python</h1>
 
-This repository showcases an end-to-end **Natural Language Processing (NLP) and social media analytics workflow** built from more than **1 million tweets**, with approximately **409,915 records** retained for analysis after preprocessing. I developed the analytical pipeline independently, covering data cleaning, text preprocessing, sentiment analysis, topic modeling, visualization, and interpretation.
+This project showcases an **end-to-end predictive analytics workflow** built using approximately **15 million financial data points**. I developed it to demonstrate large-scale data preparation, exploratory data analysis, feature engineering, statistical modeling, strategy development, simulation, backtesting, and quantitative performance evaluation.
 
-Although the project uses **COVID-19 Twitter data** as its case study, the techniques demonstrated, including **text mining, sentiment analysis, topic modeling, feature extraction, exploratory analysis, and large-scale text processing**, are broadly transferable across marketing, customer analytics, healthcare, public policy, communications, finance, and other data-driven domains.
+Although the project uses **S&P 500 financial market data** as its case study, the analytical techniques I apply such as exploratory data analysis, statistical modeling, simulation, model evaluation, and systematic experimentation are broadly transferable to operations, manufacturing, healthcare, insurance, marketing, and other data-driven industries. At the same time, the project highlights my ability to perform quantitative financial analysis, portfolio modeling, risk evaluation, and investment strategy assessment.
 
-Using **Python**, **VADER**, **LDA**, **AWS S3**, and a range of NLP and visualization libraries, I transformed large-scale unstructured social media data into interpretable insights about sentiment, dominant discussion themes, and engagement patterns.
+Using **Python**, **AWS S3**, Natural Language Processing, and machine learning techniques, I transformed large-scale social media data into actionable insights that support audience analysis, campaign evaluation, and data-driven communication strategies.
 
-The project was completed under a tight **two-day deadline**. I independently developed the technical analysis while also briefing my MBA teammates on the methodology and findings, enabling the team to communicate the results through a concise final presentation.
+## 💼 Analytical Goals
 
-# 🤝 Technical Leadership & Team Delivery
-
-Although completed as a group assignment, I served as the project's primary analyst and independently developed the complete analytical workflow.
-
-My responsibilities included:
-
-- Building the NLP pipeline from raw data through final analysis.
-- Cleaning and processing approximately **409,915 usable tweets**.
-- Conducting sentiment analysis and topic modeling.
-- Developing the project's analytical visualizations.
-- Interpreting the technical findings.
-- Explaining the methodology and results to non-technical teammates.
-- Supporting the development of the final presentation.
-
-This allowed the broader team to focus on communicating the analytical findings while demonstrating my ability to combine technical execution with cross-functional communication.
-
-# 🎯 Project Goals
-
-The project was designed to apply Natural Language Processing and social media analytics to large-scale unstructured text data.
+The project focuses on applying predictive analytics and statistical modeling to evaluate whether historical financial data can be used to develop a robust, data-driven investment strategy.
 
 The primary goals were to:
 
-- Clean and preprocess large-scale social media datasets.
-- Analyze public sentiment using NLP techniques.
-- Identify dominant conversation themes through topic modeling.
-- Explore engagement patterns across social media content.
-- Visualize complex textual data clearly.
-- Translate NLP outputs into actionable communication insights.
-- Demonstrate a reproducible end-to-end text analytics workflow.
+- Prepare and analyze large-scale financial datasets
+- Explore sector performance and historical price behavior
+- Evaluate volatility and risk characteristics
+- Develop a rule-based investment strategy
+- Benchmark strategy performance against the S&P 500
+- Assess risk-adjusted returns using quantitative financial metrics
 
-# 🏗️ Solution Architecture
+## 🏗️ Solution Architecture
 
-### Workflow
+#### Predictive Analytics Workflow
 
-```text
-Raw Twitter Datasets
-        ↓
-Amazon S3 Storage
-        ↓
-Data Cleaning & Preprocessing
-        ↓
-Text Normalization
-        ↓
-Exploratory Data Analysis
-        ↓
-Sentiment Analysis (VADER)
-        ↓
-Topic Modeling (LDA)
-        ↓
-Engagement Analysis
-        ↓
-Data Visualization
-        ↓
-Analytical Interpretation
-        ↓
-Final Presentation
-```
+- Enterprise-scale data preparation
+- Exploratory Data Analysis (EDA)
+- Statistical analysis
+- Feature engineering
+- Strategy development
+- Quantitative backtesting
+- Performance evaluation
+- Executive reporting
 
-### Data
+#### Data
 
 - **Dataset:** COVID-19 Twitter Posts
-- **Original Volume:** 1M+ tweets across three datasets
-- **Processed Volume:** ~409,915 usable tweets
-- **Source:** Kaggle
-- **Storage:** Amazon S3
-- **Data Type:** Unstructured social media text and engagement metadata
+- **Size:** ~409,915 processed tweets
+- **Original Dataset:** Over 1 million tweets across three Twitter datasets
+- **Platform:** Kaggle
+- **Cloud Storage:** AWS S3
+- **Language:** English
 
-### Data Preparation
+#### Data Engineering
 
-Prepared the Twitter datasets by:
+Performed large-scale data preparation by:
 
-- Combining multiple source datasets.
-- Removing unusable or incomplete records.
-- Cleaning URLs, punctuation, emojis, and special characters.
-- Normalizing text and capitalization.
-- Removing stopwords.
-- Tokenizing and lemmatizing text.
-- Preparing cleaned text for sentiment and topic modeling.
+- Cleaning and standardizing financial datasets
+- Combining company metadata with historical price data
+- Organizing datasets within AWS S3 to simulate a production cloud-based analytics workflow
+- Engineering analytical features for performance evaluation
+- Organizing data for efficient exploratory analysis and modeling
 
-### Exploratory Data Analysis
+#### Exploratory Data Analysis
 
-Analyzed:
+Conducted comprehensive exploratory analysis to evaluate:
 
-- Tweet volume
-- Language distribution
-- Hashtag frequency
-- Engagement patterns
-- User activity
-- Sentiment distributions
-- Temporal changes in discussion
+- Sector performance
+- Stock price behavior
+- Volatility distributions
+- Return characteristics
+- Market trends
+- Initial investment opportunities
 
-### Sentiment Analysis
+#### Statistical Modeling & Strategy Development
 
-Applied **VADER** sentiment scoring to classify tweets as:
+Developed a rule-based investment strategy by:
 
-- Positive
-- Neutral
-- Negative
+- Evaluating sector-level historical performance
+- Measuring volatility and downside risk
+- Comparing investment candidates
+- Selecting healthcare-focused portfolios based on quantitative criteria
+- Benchmarking against the S&P 500
 
-Sentiment results were then compared with engagement behavior such as likes, replies, and retweets.
+#### Performance Evaluation
 
-### Topic Modeling
+Evaluated strategy performance using:
 
-Applied **Latent Dirichlet Allocation (LDA)** to identify recurring themes within the Twitter discourse.
+- CAGR
+- Sharpe Ratio
+- Sortino Ratio
+- Maximum Drawdown
+- Calmar Ratio
+- Volatility
+- 1,000 simulated backtesting iterations
 
-Topic modeling was supported by:
+## 📊 Analytical Insights
 
-- Text vectorization
-- Token processing
-- Topic extraction
-- Keyword interpretation
-- Word clouds
-- Comparative visualizations
+#### Portfolio Performance
 
-### Data Visualization
+- The healthcare sector demonstrated a strong balance between long-term returns and stability.
+- The strategy outperformed the S&P 500 in approximately **60%** of simulated backtests.
+- Downside underperformance remained relatively limited compared to periods of outperformance.
+- Risk-adjusted performance metrics consistently favored the healthcare portfolio.
+- Historical performance suggested healthcare as a resilient sector under the evaluated strategy.
 
-Developed analytical visualizations using:
+#### Quantitative Analysis
 
-- Matplotlib
-- Seaborn
-- Plotly
-- WordCloud
-- Squarify
+- Sector selection significantly influenced long-term investment performance.
+- Risk-adjusted metrics provided greater insight than raw returns alone.
+- Volatility analysis improved portfolio selection decisions.
+- Simulation demonstrated that systematic, data-driven decision-making can outperform simple benchmark investing under the tested assumptions.
 
-Visual outputs included sentiment charts, topic distributions, engagement comparisons, word clouds, and treemaps.
+## 📈 Executive Recommendations
 
-### Cloud Storage
+- Incorporate risk-adjusted metrics alongside return-based performance measures.
+- Consider sector-level diversification strategies rather than purely market-weighted allocations.
+- Use systematic quantitative screening to support portfolio construction.
+- Regularly reevaluate investment strategies using updated historical data.
+- Combine statistical analysis with ongoing market monitoring to improve long-term decision-making.
 
-Used **Amazon S3** to store both raw datasets and major project deliverables, keeping the GitHub repository lightweight while demonstrating cloud-based data management.
+## 🛠️ Technical Skills Demonstrated
 
-# 📊 Analytical Insights
-
-### Sentiment
-
-- Approximately **53%** of analyzed tweets were negative.
-- Roughly **39%** were neutral.
-- Positive sentiment represented approximately **8%** of the dataset.
-- Negative and uncertain sentiment dominated much of the observed COVID-19 discourse.
-
-### Topic Modeling
-
-LDA identified recurring discussion themes involving:
-
-- Government policy
-- Lockdowns and quarantine
-- Vaccines
-- Economic uncertainty
-- Employment
-- Health information
-- COVID-19 symptoms
-
-### Engagement Patterns
-
-- Negative or controversial content tended to generate stronger retweet activity.
-- Neutral posts generated comparatively more replies than likes.
-- Engagement spikes often coincided with major COVID-related developments and policy changes.
-
-### Communication Strategy
-
-The analysis demonstrated how organizations can combine sentiment, topic, and engagement data to better understand audience concerns and adapt communication strategies accordingly.
-
-# ⚠️ Project Limitations
-
-- Social media users are not representative of the broader population.
-- Demographic attributes were unavailable for most users.
-- Social media text contains noise, slang, sarcasm, and contextual ambiguity.
-- VADER and LDA provide useful analytical approximations but cannot fully capture human language or intent.
-- Findings reflect the available Twitter datasets and should not be generalized to all public opinion.
-
-# 📈 Analytical Recommendations
-
-Based on the analyses:
-
-- Monitor sentiment alongside topic frequency to identify emerging audience concerns.
-- Track engagement patterns to determine which subjects generate the strongest public response.
-- Adapt messaging strategies when negative sentiment increases around specific topics.
-- Combine social media analytics with additional audience and survey data for more complete decision support.
-- Use more advanced domain-specific NLP models when deeper sentiment or contextual interpretation is required.
-
-# 🛠️ Technical Skills Demonstrated
-
-### Programming
+#### Data Science
 
 - Python
+- Pandas
+- NumPy
+- Large-scale Dataset Processing
 
-### Natural Language Processing
-
-- Text Mining
-- Sentiment Analysis
-- VADER
-- Latent Dirichlet Allocation (LDA)
-- Tokenization
-- Lemmatization
-- Stopword Removal
-- Text Normalization
-- Topic Modeling
-
-### Data Analysis
+#### Statistical Analysis
 
 - Exploratory Data Analysis (EDA)
-- Engagement Analysis
-- Social Media Analytics
 - Distribution Analysis
-- Comparative Analysis
-- Large-Scale Text Processing
+- Volatility Analysis
+- Risk Analysis
+- Performance Evaluation
 
-### Data Preparation
+#### Predictive Analytics
 
-- Data Cleaning
-- Data Transformation
-- Text Preprocessing
-- Missing Data Handling
-- Feature Extraction
-- Dataset Integration
+- Strategy Development
+- Simulation
+- Quantitative Backtesting
+- Benchmark Comparison
+- Rule-based Modeling
 
-### Data Visualization
+#### Data Visualization
 
 - Matplotlib
 - Seaborn
 - Plotly
-- WordCloud
-- Squarify
-- Data Storytelling
 
-### Libraries
+#### Financial Analytics
 
-- pandas
-- NumPy
-- NLTK
-- gensim
-- scikit-learn
-- VADER
-- Matplotlib
-- Seaborn
-- Plotly
-- WordCloud
-- Squarify
+- CAGR
+- Sharpe Ratio
+- Sortino Ratio
+- Maximum Drawdown
+- Calmar Ratio
+- Portfolio Performance Analysis
 
-### Cloud & Software
+#### Cloud Technologies
 
+- Amazon Web Services (AWS)
 - Amazon S3
-- Visual Studio Code
-- Jupyter Notebook
+- Cloud Data Storage
+- Cloud-based Data Management
 
-# 💡 What This Project Demonstrates
+## 💡 What This Project Demonstrates
 
-This project demonstrates the ability to independently design, execute, and communicate an end-to-end NLP workflow using large-scale unstructured data.
+This project demonstrates the ability to independently design and evaluate a predictive analytics solution using large-scale structured datasets.
 
-Key competencies demonstrated include:
+Specifically, it showcases proficiency in:
 
-- Transforming raw text into structured analytical data.
-- Developing reproducible NLP and text-mining workflows.
-- Applying sentiment analysis and topic modeling to real-world datasets.
-- Extracting meaningful patterns from large volumes of unstructured information.
-- Translating technical outputs into actionable audience and communication insights.
-- Communicating complex analytical methods to non-technical collaborators.
-- Delivering a complete analytical solution under tight time constraints.
+- Large-scale data preparation and transformation
+- Exploratory Data Analysis (EDA)
+- Statistical analysis
+- Predictive analytics
+- Quantitative modeling
+- Strategy evaluation
+- Simulation and backtesting
+- Data visualization
+- Translating analytical findings into actionable decision-support insights
 
-Although centered on social media data, the NLP, analytical reasoning, data preparation, visualization, and communication skills demonstrated are broadly transferable across marketing, customer analytics, healthcare, finance, public policy, research, and other data-driven fields.
-
-# 📁 Repository Structure
+## 📁 Repository Structure
 
 ```text
-Natural-Language-Processing-Social-Media-Analytics-Python/
-│
-├── Datasets/
-│   └── README.md
-│       └── AWS S3 link to raw Twitter datasets
-│
-├── Outputs/
-│   └── README.md
-│       └── AWS S3 links to project deliverables
-│
-└── README.md
-    └── Project documentation
+Datasets/
+    Link to AWS S3 dataset archive
+
+Outputs/
+    Link to AWS S3 project deliverables
 ```
 
-**Datasets**
+The repository uses **Amazon S3** to store both the raw datasets and project deliverables, simulating a cloud-based analytics workflow commonly used in production environments. GitHub contains links to the corresponding S3 resources rather than the files themselves.
 
-Contains an AWS S3 link to the original COVID-19 Twitter datasets used throughout the analysis.
+## 📋 Replicating the Project
 
-**Outputs**
+#### Clone the Repository
 
-Provides access to:
+```bash
+git clone https://github.com/Awale-Abdi/Natural-Language-Processing-Social-Media-Analytics-Python.git
+```
 
+#### Open the Project
+
+The repository provides links to AWS S3 resources containing:
+
+- Original Twitter datasets
 - Complete Jupyter Notebook
 - Project visualizations
 - Final presentation
 
-**Repository**
-
-The root README documents the project goals, solution architecture, analytical findings, technical skills, and replication steps.
-
-# 🚀 Replicating the Project
-
-### Clone the Repository
-
-```bash
-git clone https://github.com/Awale-Abdi/Natural-Language-Processing-Social-Media-Analytics-Python.git
-cd Natural-Language-Processing-Social-Media-Analytics-Python
-```
-
-### Download the Data
-
-Open:
-
-```text
-Datasets/
-```
-
-and follow the provided AWS S3 link to download the original Twitter datasets.
-
-### Access the Project Files
-
-Open:
+Open the notebook located in:
 
 ```text
 Outputs/
 ```
 
-and follow the AWS S3 link to access the complete project deliverables.
-
-Launch:
+Then launch and run:
 
 ```text
 Social Media Analytics - Team 5 Code by Awale Abdi.ipynb
 ```
-
-### Run the Analysis
-
-Execute the notebook sequentially to reproduce:
-
-- Data cleaning and preprocessing
-- Exploratory data analysis
-- Sentiment analysis
-- Topic modeling
-- Engagement analysis
-- Data visualization
-- Analytical findings
-
-# 📬 Contact Me
+## 📬 Contact
 
 **Email**
 
-[Awaleiabdi@outlook.com](mailto:Awaleiabdi@outlook.com)
+Awaleiabdi@outlook.com
 
 **LinkedIn**
 
