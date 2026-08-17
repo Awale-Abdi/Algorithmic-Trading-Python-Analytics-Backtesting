@@ -1,6 +1,6 @@
 <h1 align="center">Predictive Analytics & Statistical Modeling | Data-Driven Portfolio Analysis with Python</h1>
 
-This project showcases an **end-to-end predictive analytics and statistical analysis workflow** built using approximately **1.87 million historical stock-price records covering more than 500 companies**. I developed it to demonstrate large-scale data preparation, exploratory data analysis, feature engineering, statistical analysis, systematic strategy development, simulation, backtesting, and quantitative performance evaluation.
+This project showcases an **end-to-end predictive analytics and statistical analysis workflow** built using approximately **15 million financial data points across 1.87 million historical stock-price records and more than 500 companies**. I developed it to demonstrate large-scale data preparation, exploratory data analysis, feature engineering, statistical analysis, systematic strategy development, simulation, backtesting, and quantitative performance evaluation.
 
 Although the project uses **S&P 500 financial market data** as its case study, the analytical techniques I apply, such as exploratory data analysis, statistical analysis, segmentation, feature engineering, random-sampling simulation, benchmark comparison, and systematic experimentation, are broadly transferable to operations, manufacturing, healthcare, insurance, marketing, risk analytics, and other data-driven fields.
 
