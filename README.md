@@ -1,44 +1,51 @@
 <h1 align="center">Predictive Analytics & Statistical Modeling | Data-Driven Portfolio Analysis with Python</h1>
 
-This project showcases an **end-to-end predictive analytics workflow** built using approximately **15 million financial data points**. I developed it to demonstrate large-scale data preparation, exploratory data analysis, feature engineering, statistical modeling, strategy development, simulation, backtesting, and quantitative performance evaluation.
+This project showcases an **end-to-end predictive analytics and statistical analysis workflow** built using approximately **1.87 million historical stock-price records covering more than 500 companies**. I developed it to demonstrate large-scale data preparation, exploratory data analysis, feature engineering, statistical analysis, systematic strategy development, simulation, backtesting, and quantitative performance evaluation.
 
-Although the project uses **S&P 500 financial market data** as its case study, the analytical techniques I apply such as exploratory data analysis, statistical modeling, simulation, model evaluation, and systematic experimentation are broadly transferable to operations, manufacturing, healthcare, insurance, marketing, and other data-driven industries. At the same time, the project highlights my ability to perform quantitative financial analysis, portfolio modeling, risk evaluation, and investment strategy assessment.
+Although the project uses **S&P 500 financial market data** as its case study, the analytical techniques I apply, such as exploratory data analysis, statistical analysis, segmentation, feature engineering, random-sampling simulation, benchmark comparison, and systematic experimentation, are broadly transferable to operations, manufacturing, healthcare, insurance, marketing, risk analytics, and other data-driven fields.
 
-Using **Python**, **AWS S3**, Natural Language Processing, and machine learning techniques, I transformed large-scale social media data into actionable insights that support audience analysis, campaign evaluation, and data-driven communication strategies.
+Using **Python**, **Pandas**, **NumPy**, and statistical and visualization techniques, I transformed large-scale structured data into an analytical framework for identifying patterns, evaluating alternatives, testing a data-driven strategy, and measuring its performance against a defined benchmark.
+
+The resulting workflow demonstrates how exploratory analysis can progress systematically from raw data preparation and pattern discovery through hypothesis development, experimentation, validation, and decision-support insights.
 
 ## 💼 Analytical Goals
 
-The project focuses on applying predictive analytics and statistical modeling to evaluate whether historical financial data can be used to develop a robust, data-driven investment strategy.
+The project focuses on applying data science, statistical analysis, and systematic experimentation to determine whether historical patterns can be used to develop and evaluate a robust data-driven strategy.
 
 The primary goals were to:
 
-- Prepare and analyze large-scale financial datasets
-- Explore sector performance and historical price behavior
-- Evaluate volatility and risk characteristics
-- Develop a rule-based investment strategy
-- Benchmark strategy performance against the S&P 500
-- Assess risk-adjusted returns using quantitative financial metrics
-
-## 🏗️ Solution Architecture
+- Prepare and analyze large-scale structured datasets
+- Explore historical patterns across companies and sectors
+- Evaluate price behavior, returns, volatility, and risk characteristics
+- Identify meaningful analytical segments and comparative patterns
+- Develop a rule-based strategy from exploratory findings
+- Test the strategy through repeated random-sampling simulations
+- Benchmark performance against the S&P 500
+- Evaluate results using quantitative risk and performance metrics
+- Translate analytical findings into actionable decision-support insights
 
 ## 🏗️ Solution Architecture
 
 #### Workflow
 
 ```text
-Large-Scale Financial Datasets
+Large-Scale Structured Datasets
         ↓
-Data Preparation & Integration
+Data Preparation & Cleaning
         ↓
 Exploratory Data Analysis
         ↓
-Feature Engineering
+Segmentation & Feature Engineering
         ↓
-Statistical Analysis
+Statistical & Volatility Analysis
+        ↓
+Sector-Level Comparative Analysis
         ↓
 Strategy Development
         ↓
-Simulation & Backtesting
+Random-Sampling Simulation
+        ↓
+Quantitative Backtesting
         ↓
 Benchmark Comparison
         ↓
@@ -49,185 +56,384 @@ Analytical Interpretation
 
 #### Data
 
-- **Dataset:** COVID-19 Twitter Posts
-- **Size:** ~409,915 processed tweets
-- **Original Dataset:** Over 1 million tweets across three Twitter datasets
-- **Platform:** Kaggle
-- **Cloud Storage:** AWS S3
-- **Language:** English
+- **Dataset:** S&P 500 Company, Stock Price, and Index Data
+- **Companies:** 503 S&P 500 company records
+- **Stock Price Records:** ~1.87 million historical observations
+- **S&P 500 Index Records:** 2,516 observations
+- **Historical Analysis Period:** 2010–2024
+- **Data Formats:** CSV and Parquet
+- **Primary Data:** Historical stock prices, trading volume, company and sector metadata, and S&P 500 index values
 
-#### Data Engineering
+The analysis uses three complementary datasets:
+
+```text
+sp500_companies.csv
+sp500_index.csv
+sp500_stocks.parquet
+```
+
+Together, these datasets provide company-level attributes, sector classifications, historical market prices, trading activity, and benchmark index performance.
+
+#### Data Preparation
 
 Performed large-scale data preparation by:
 
-- Cleaning and standardizing financial datasets
-- Combining company metadata with historical price data
-- Organizing datasets within AWS S3 to simulate a production cloud-based analytics workflow
-- Engineering analytical features for performance evaluation
-- Organizing data for efficient exploratory analysis and modeling
+- Loading and validating multiple structured datasets
+- Converting date fields into appropriate time-series formats
+- Standardizing numeric variables for analysis
+- Identifying and handling missing values
+- Detecting and removing anomalous trading-volume records
+- Integrating company metadata with historical stock-price data
+- Preparing structured datasets for downstream statistical analysis
 
 #### Exploratory Data Analysis
 
-Conducted comprehensive exploratory analysis to evaluate:
+Conducted exploratory analysis to evaluate:
 
-- Sector performance
-- Stock price behavior
-- Volatility distributions
-- Return characteristics
-- Market trends
-- Initial investment opportunities
+- Historical stock-price distributions
+- Trading-volume characteristics
+- Descriptive statistical patterns
+- Price variability
+- Company-level behavior
+- Market-wide distributions
+- Potential analytical segments and investment opportunities
 
-#### Statistical Modeling & Strategy Development
+Stocks were segmented into price-based cohorts to compare behavioral differences across the dataset and provide a structured basis for deeper analysis.
 
-Developed a rule-based investment strategy by:
+#### Feature Engineering & Segmentation
 
-- Evaluating sector-level historical performance
-- Measuring volatility and downside risk
-- Comparing investment candidates
-- Selecting healthcare-focused portfolios based on quantitative criteria
-- Benchmarking against the S&P 500
+Engineered analytical features and classifications including:
+
+- Daily returns
+- Average closing prices
+- Price-based cohorts
+- Stock-level volatility
+- Volatility cohorts
+- Sector classifications
+- Sector-level performance measures
+
+These features allowed the analysis to progress from individual stock observations toward broader comparative patterns across companies and sectors.
+
+#### Statistical & Sector Analysis
+
+Conducted deeper comparative analysis by:
+
+- Integrating stock-price data with company and sector metadata
+- Comparing average closing prices across sectors
+- Measuring volatility using the standard deviation of daily returns
+- Examining the distribution of price cohorts within sectors
+- Segmenting securities into low, medium, and high volatility groups
+- Comparing risk characteristics across market segments
+- Identifying sectors displaying favorable combinations of historical performance and stability
+
+The exploratory and statistical findings were then used to guide the development of the final strategy.
+
+#### Strategy Development
+
+Based on the preceding analysis, the **Healthcare sector** was selected for systematic testing due to its observed combination of historical performance, volatility characteristics, and representation across price cohorts.
+
+A rule-based experimental strategy was developed to compare randomly constructed healthcare portfolios against the S&P 500 benchmark over the historical period.
+
+#### Simulation & Backtesting
+
+The strategy was evaluated through **1,000 random-sampling iterations**.
+
+During each iteration:
+
+- Five healthcare stocks were randomly selected without replacement
+- Historical daily returns were calculated for the selected portfolio
+- Portfolio returns were aggregated across the selected companies
+- Cumulative portfolio performance was calculated
+- Equivalent S&P 500 benchmark performance was calculated
+- Final portfolio values were compared
+- Winning and losing iterations were recorded
+
+Repeating this process across 1,000 independently sampled portfolios provided a more robust evaluation than relying on the performance of a single hand-selected portfolio.
 
 #### Performance Evaluation
 
-Evaluated strategy performance using:
+Performance was evaluated using:
 
-- CAGR
+- Compound Annual Growth Rate (CAGR)
 - Sharpe Ratio
 - Sortino Ratio
 - Maximum Drawdown
+- Annualized Volatility
 - Calmar Ratio
-- Volatility
-- 1,000 simulated backtesting iterations
+- Benchmark Outperformance Frequency
+- Average Outperformance
+- Average Underperformance
+- Cumulative Portfolio Value
+
+Results were aggregated across the simulation framework and compared directly with the S&P 500 benchmark.
 
 ## 📊 Analytical Insights
 
 #### Portfolio Performance
 
-- The healthcare sector demonstrated a strong balance between long-term returns and stability.
-- The strategy outperformed the S&P 500 in approximately **60%** of simulated backtests.
-- Downside underperformance remained relatively limited compared to periods of outperformance.
-- Risk-adjusted performance metrics consistently favored the healthcare portfolio.
-- Historical performance suggested healthcare as a resilient sector under the evaluated strategy.
+Across **1,000 random-sampling iterations**, the healthcare strategy demonstrated strong historical performance relative to the S&P 500 benchmark.
+
+Average performance metrics were:
+
+| Metric | Healthcare Portfolio | S&P 500 |
+|---|---:|---:|
+| CAGR | **13.18%** | 11.26% |
+| Sharpe Ratio | **0.80** | 0.70 |
+| Sortino Ratio | **1.06** | 0.85 |
+| Maximum Drawdown | **-29.18%** | -33.92% |
+| Volatility | **17.60%** | 17.85% |
+| Calmar Ratio | **0.45** | 0.33 |
+
+The healthcare portfolios:
+
+- Outperformed the S&P 500 in approximately **63% of the 1,000 iterations**
+- Outperformed by approximately **42.53%** of the benchmark's average final portfolio value during winning iterations
+- Underperformed by approximately **22.20%** during losing iterations
+- Produced a higher average CAGR than the benchmark
+- Generated stronger Sharpe and Sortino ratios
+- Experienced a smaller maximum drawdown
+- Produced a stronger Calmar ratio
 
 #### Quantitative Analysis
 
-- Sector selection significantly influenced long-term investment performance.
-- Risk-adjusted metrics provided greater insight than raw returns alone.
-- Volatility analysis improved portfolio selection decisions.
-- Simulation demonstrated that systematic, data-driven decision-making can outperform simple benchmark investing under the tested assumptions.
+- Sector-level segmentation revealed meaningful differences in historical price behavior and volatility.
+- Volatility analysis provided additional information beyond raw price performance.
+- Risk-adjusted metrics provided a more complete evaluation than returns alone.
+- Repeated random sampling reduced dependence on the performance of any single manually selected portfolio.
+- Benchmark comparison provided a consistent baseline for strategy evaluation.
+- The simulation demonstrated how systematic experimentation can evaluate the robustness of an analytical hypothesis across varying samples.
 
-## 📈 Executive Recommendations
+## ⚠️ Project Limitations
 
-- Incorporate risk-adjusted metrics alongside return-based performance measures.
-- Consider sector-level diversification strategies rather than purely market-weighted allocations.
-- Use systematic quantitative screening to support portfolio construction.
-- Regularly reevaluate investment strategies using updated historical data.
-- Combine statistical analysis with ongoing market monitoring to improve long-term decision-making.
+- Historical performance does not guarantee future results.
+- The analysis evaluates historical market behavior and should not be interpreted as investment advice.
+- Randomly sampled portfolios were limited to five healthcare stocks per iteration.
+- The strategy does not incorporate transaction costs, taxes, slippage, or portfolio rebalancing costs.
+- Sector membership and company characteristics can change over time.
+- The analysis does not explicitly control for survivorship bias.
+- The strategy is rule-based rather than a trained predictive machine learning model.
+- Results depend on the historical period and datasets used.
+
+These limitations mean the results should be interpreted as a demonstration of **data-driven strategy development, simulation, and experimental evaluation**, rather than evidence that the historical strategy will necessarily outperform in future markets.
+
+## 📈 Analytical Recommendations
+
+- Evaluate analytical strategies using both absolute and risk-adjusted performance measures.
+- Use repeated sampling and experimentation rather than relying on individual observations or manually selected cases.
+- Compare analytical strategies against clearly defined benchmarks.
+- Incorporate volatility and downside-risk measures when evaluating performance.
+- Extend the framework across additional sectors and portfolio sizes to test the robustness of observed patterns.
+- Introduce rolling-window or out-of-sample testing to evaluate performance across different historical periods.
+- Incorporate additional features and predictive models to test whether more sophisticated approaches improve performance.
+- Regularly reevaluate strategies as new data becomes available.
 
 ## 🛠️ Technical Skills Demonstrated
 
-#### Data Science
+#### Programming
 
 - Python
 - Pandas
 - NumPy
-- Large-scale Dataset Processing
+
+#### Data Science & Analytics
+
+- Large-Scale Dataset Processing
+- Data Cleaning
+- Data Transformation
+- Exploratory Data Analysis (EDA)
+- Feature Engineering
+- Data Integration
+- Segmentation
+- Comparative Analysis
+- Systematic Experimentation
 
 #### Statistical Analysis
 
-- Exploratory Data Analysis (EDA)
+- Descriptive Statistics
 - Distribution Analysis
+- Daily Return Analysis
+- Standard Deviation
 - Volatility Analysis
 - Risk Analysis
-- Performance Evaluation
+- Quantitative Performance Evaluation
 
-#### Predictive Analytics
+#### Predictive & Experimental Analytics
 
-- Strategy Development
-- Simulation
+- Rule-Based Strategy Development
+- Random-Sampling Simulation
 - Quantitative Backtesting
 - Benchmark Comparison
-- Rule-based Modeling
+- Repeated Experimental Evaluation
+- Performance Validation
 
 #### Data Visualization
 
 - Matplotlib
 - Seaborn
 - Plotly
+- Interactive Visualization
+- Distribution Visualization
+- Comparative Performance Visualization
 
-#### Financial Analytics
+#### Quantitative Analytics
 
 - CAGR
 - Sharpe Ratio
 - Sortino Ratio
 - Maximum Drawdown
+- Annualized Volatility
 - Calmar Ratio
+- Cumulative Return Analysis
 - Portfolio Performance Analysis
+- Risk-Adjusted Performance Analysis
 
-#### Cloud Technologies
+#### Development Environment
 
-- Amazon Web Services (AWS)
-- Amazon S3
-- Cloud Data Storage
-- Cloud-based Data Management
+- Jupyter Notebook
+- Git
+- GitHub
 
 ## 💡 What This Project Demonstrates
 
-This project demonstrates the ability to independently design and evaluate a predictive analytics solution using large-scale structured datasets.
+This project demonstrates the ability to independently design and execute an end-to-end analytical solution using large-scale structured datasets.
 
 Specifically, it showcases proficiency in:
 
-- Large-scale data preparation and transformation
-- Exploratory Data Analysis (EDA)
-- Statistical analysis
-- Predictive analytics
-- Quantitative modeling
-- Strategy evaluation
-- Simulation and backtesting
-- Data visualization
-- Translating analytical findings into actionable decision-support insights
+- Preparing and transforming large datasets for analysis
+- Conducting exploratory and statistical analysis
+- Engineering analytical features from raw observations
+- Identifying patterns through segmentation and comparative analysis
+- Developing hypotheses and rule-based strategies from analytical findings
+- Designing repeated random-sampling experiments
+- Backtesting analytical strategies against defined benchmarks
+- Evaluating outcomes using multiple quantitative performance metrics
+- Developing static and interactive data visualizations
+- Translating complex quantitative results into actionable decision-support insights
+
+Although financial market data provides the case study, the underlying workflow of **data preparation → exploratory analysis → feature engineering → segmentation → hypothesis development → simulation → validation → performance evaluation → decision support** is broadly transferable across Data Science, Business Analytics, operations, healthcare, insurance, marketing, risk analysis, experimentation, and other data-driven fields.
 
 ## 📁 Repository Structure
 
 ```text
-Datasets/
-    Link to AWS S3 dataset archive
-
-Outputs/
-    Link to AWS S3 project deliverables
+Predictive-Analytics-Statistical-Modeling-Portfolio-Analysis-Python/
+│
+├── Datasets/
+│   ├── sp500_companies.csv
+│   ├── sp500_index.csv
+│   └── sp500_stocks.parquet
+│
+├── Outputs/
+│   ├── high_price_distribution.jpg
+│   ├── interactive_backtest_plot.html
+│   ├── low_price_distribution.jpg
+│   ├── middle_price_distribution.jpg
+│   ├── sector_avg_closing_price_distribution.jpg
+│   ├── sector_volatility_cohort.jpg
+│   └── sector_volatility_price_cohort.jpg
+│
+├── Python Notebook/
+│   └── Data-Driven Investment Strategy - Analyzing Financial Data for Portfolio Optimization.ipynb
+│
+├── .gitattributes
+│
+└── README.md
 ```
 
-The repository uses **Amazon S3** to store both the raw datasets and project deliverables, simulating a cloud-based analytics workflow commonly used in production environments. GitHub contains links to the corresponding S3 resources rather than the files themselves.
+**Datasets**
+
+Contains the three datasets required to reproduce the analysis:
+
+- S&P 500 company and sector metadata
+- Historical S&P 500 index values
+- Historical individual stock-price data
+
+**Outputs**
+
+Contains the static and interactive visualizations generated throughout the exploratory, sector, volatility, and backtesting analyses.
+
+**Python Notebook**
+
+Contains the complete analytical workflow from data preparation through exploratory analysis, statistical analysis, strategy development, simulation, backtesting, and final interpretation.
 
 ## 📋 Replicating the Project
 
 #### Clone the Repository
 
 ```bash
-git clone https://github.com/Awale-Abdi/Natural-Language-Processing-Social-Media-Analytics-Python.git
+git clone https://github.com/Awale-Abdi/Algorithmic_Trading_Healthcare_Portfolio.git
+cd Algorithmic_Trading_Healthcare_Portfolio
 ```
 
-#### Open the Project
+#### Required Data
 
-The repository provides links to AWS S3 resources containing:
+All datasets required to reproduce the project are included in:
 
-- Original Twitter datasets
-- Complete Jupyter Notebook
-- Project visualizations
-- Final presentation
+```text
+Datasets/
+```
 
-Open the notebook located in:
+The analysis requires:
+
+```text
+sp500_companies.csv
+sp500_index.csv
+sp500_stocks.parquet
+```
+
+#### Open the Notebook
+
+Navigate to:
+
+```text
+Python Notebook/
+```
+
+Then open:
+
+```text
+Data-Driven Investment Strategy - Analyzing Financial Data for Portfolio Optimization.ipynb
+```
+
+#### Required Python Libraries
+
+The analysis uses:
+
+```text
+pandas
+numpy
+matplotlib
+seaborn
+plotly
+pyarrow
+```
+
+`pyarrow` or another compatible Parquet engine is required to load the stock-price dataset.
+
+#### Run the Analysis
+
+Execute the notebook sequentially to reproduce:
+
+- Data preparation and cleaning
+- Exploratory Data Analysis (EDA)
+- Price-cohort segmentation
+- Feature engineering
+- Sector-level comparative analysis
+- Daily-return calculations
+- Volatility analysis
+- Strategy development
+- 1,000-iteration random-sampling simulation
+- Quantitative backtesting
+- S&P 500 benchmark comparison
+- Risk and performance evaluation
+- Static and interactive visualizations
+
+Generated analytical outputs can then be compared with the files contained in:
 
 ```text
 Outputs/
 ```
 
-Then launch and run:
-
-```text
-Social Media Analytics - Team 5 Code by Awale Abdi.ipynb
-```
-## 📬 Contact
+## 📬 Contact Me
 
 **Email**
 
