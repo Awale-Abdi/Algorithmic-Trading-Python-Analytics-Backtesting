@@ -21,16 +21,31 @@ The primary goals were to:
 
 ## 🏗️ Solution Architecture
 
-#### Predictive Analytics Workflow
+## 🏗️ Solution Architecture
 
-- Enterprise-scale data preparation
-- Exploratory Data Analysis (EDA)
-- Statistical analysis
-- Feature engineering
-- Strategy development
-- Quantitative backtesting
-- Performance evaluation
-- Executive reporting
+#### Workflow
+
+```text
+Large-Scale Financial Datasets
+        ↓
+Data Preparation & Integration
+        ↓
+Exploratory Data Analysis
+        ↓
+Feature Engineering
+        ↓
+Statistical Analysis
+        ↓
+Strategy Development
+        ↓
+Simulation & Backtesting
+        ↓
+Benchmark Comparison
+        ↓
+Risk & Performance Evaluation
+        ↓
+Analytical Interpretation
+```
 
 #### Data
 
