@@ -310,7 +310,7 @@ Specifically, it showcases proficiency in:
 - Developing static and interactive data visualizations
 - Translating complex quantitative results into actionable decision-support insights
 
-Although financial market data provides the case study, the underlying workflow of **data preparation → exploratory analysis → feature engineering → segmentation → hypothesis development → simulation → validation → performance evaluation → decision support** is broadly transferable across Data Science, Business Analytics, operations, healthcare, insurance, marketing, risk analysis, experimentation, and other data-driven fields.
+As stated prior, although financial market data provides the case study, the underlying workflow of **data preparation → exploratory analysis → feature engineering → segmentation → hypothesis development → simulation → validation → performance evaluation → decision support** is broadly transferable across Data Science, Business Analytics, operations, manufacturing, healthcare, insurance, marketing, risk analysis, experimentation, and a wide range of other data-driven fields.
 
 ## 📁 Repository Structure
 
